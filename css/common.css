@@ -12,3 +12,201 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/* Task 1 — categories */
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: fit-content;
+  margin: 0;
+  padding: 24px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+}
+
+#categories .item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+}
+
+#categories .item h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+#categories .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#categories .item ul li {
+  width: 360px;
+  padding: 7px 15px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Task 2 — gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery li {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Task 3 — name input */
+#name-input {
+  display: block;
+  width: 360px;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+}
+
+#name-input + h1 {
+  margin: 16px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* Task 4 — login form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: fit-content;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.login-form button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  font: inherit;
+  font-weight: 500;
+  letter-spacing: inherit;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Task 5 — color widget */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  padding: 100px 88px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget p {
+  margin: 0;
+}
+
+.change-color {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  font: inherit;
+  font-weight: 500;
+  letter-spacing: inherit;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* States — inputs (tasks 3, 4) */
+#name-input:hover,
+.login-form input:hover {
+  border-color: #000;
+}
+
+#name-input:focus,
+.login-form input:focus {
+  outline: none;
+}
+
+/* States — primary buttons (tasks 4, 5) */
+.login-form button:hover,
+.change-color:hover {
+  background-color: #6c8cff;
+}
